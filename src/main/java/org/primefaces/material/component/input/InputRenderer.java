@@ -37,7 +37,8 @@ public class InputRenderer extends CoreRenderer{
 				
 				if(Strings.isNotEmpty(input.getIcon())){
 					writer.startElement("i", null);
-						writer.writeAttribute("class", input.getIcon() + " prefix", null);
+						writer.writeAttribute("class", "material-icons prefix", null);
+						writer.write(input.getIcon());
 					writer.endElement("i");
 				}
 			
