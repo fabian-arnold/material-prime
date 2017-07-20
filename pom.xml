@@ -66,6 +66,14 @@
 		    <scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-ci4you</id>
+			<url>http://nexus.ci4you.com/repository/ci4you/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>

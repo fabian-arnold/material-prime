@@ -28,11 +28,8 @@ public class SelectOneRenderer extends InputRenderer {
         String submittedValue = (String) context.getExternalContext().getRequestParameterMap().get(clientId + "_input");
 
         if (submittedValue != null) {
-            if (selectOne.getConverter() == null) {
-                selectOne.setSubmittedValue(submittedValue);
-            } else {
-                selectOne.setSubmittedValue(selectOne.getConverter().getAsObject(context, selectOne, submittedValue));
-            }
+            selectOne.setSubmittedValue(submittedValue);
+
         }
     }
 
